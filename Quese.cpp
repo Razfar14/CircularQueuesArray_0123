@@ -24,4 +24,9 @@ public:
             cout << "\nQueue is full\n";//1.a
             return;                     //1.b
         }
-
+        // If the queue is empty,
+        if (front == -1){
+            front = 0; //2.a
+            rear = 0;  //2.b 
+        } 
+       
