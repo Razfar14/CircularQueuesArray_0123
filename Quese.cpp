@@ -42,4 +42,9 @@ public:
     }
 
     void remove(){
-    
+        //check if the queue is empty
+        if (front == -1) {
+            cout << "\nQueue underflow\n"; 
+            return;                      
+        }
+        cout << "\nThe element deleted from the que is: " << queue_arr[front] << endl;
