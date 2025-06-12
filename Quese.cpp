@@ -29,4 +29,16 @@ public:
             front = 0; //2.a
             rear = 0;  //2.b 
         } 
-       
+        else { // if rear is at the end of the queue, GO back to the start
+            if (rear == max - 1) {
+                rear = 0; 
+            }
+            else {
+                rear = rear + 1;
+            }
+        } 
+        queue_arr[rear] = num; 
+        
+    }
+
+   
