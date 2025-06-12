@@ -19,4 +19,9 @@ public:
         cin >> num;
         cout << endl;
 
-       
+        // Check if the queue is full
+        if ((front == 0 && rear == max - 1) || (front == rear + 1)) {
+            cout << "\nQueue is full\n";//1.a
+            return;                     //1.b
+        }
+
