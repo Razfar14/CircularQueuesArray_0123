@@ -73,4 +73,30 @@ public:
             cout << "\nQueue is empty\n";
             return;
         }
-       
+        cout << "\nThe elements in the queue are... \n";
+
+        //if front_position <= rear_position, print from front to rear
+        if (front_position <= rear_position){
+            while (front_position <= rear_position) {
+                cout << queue_arr[front_position] << " ";
+                front_position++;
+            }
+            cout << endl;
+        }
+        else{
+            //if front_position > rear_position, print from front to end 
+            while (front_position <= max - 1) {
+                cout << queue_arr[front_position] << " ";
+                front_position++;
+            }
+            front_position = 0; 
+
+            while (front_position <= rear_position) {
+                cout << queue_arr[front_position] << " ";
+                front_position++;
+            }
+            cout << endl;
+        }
+    }
+};
+
