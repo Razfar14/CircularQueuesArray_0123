@@ -8,4 +8,11 @@ private:
 
 public:
 
- 
+    Queues(){
+        front = -1;
+        rear = -1;
+    }
+
+   
+
+       
