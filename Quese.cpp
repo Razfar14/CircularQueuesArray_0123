@@ -48,3 +48,20 @@ public:
             return;                      
         }
         cout << "\nThe element deleted from the que is: " << queue_arr[front] << endl;
+
+        //check if the queue has only one element
+        if (front == rear) {
+            front = -1; 
+            rear = -1;  
+        } 
+        else { //if front is at the end of the queue, GO back to the start
+            if (front == max - 1) {
+                front = 0; 
+            } 
+            else {
+                front = front + 1;
+            }
+        }
+    }
+
+   
