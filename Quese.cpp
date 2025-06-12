@@ -68,4 +68,9 @@ public:
         int front_position = front;
         int rear_position = rear;
 
+        //check if the queue is empty
+        if (front == -1) {
+            cout << "\nQueue is empty\n";
+            return;
+        }
        
