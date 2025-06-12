@@ -6,3 +6,6 @@ private:
     int front, rear, max = 5;
     int queue_arr[5];
 
+public:
+
+ 
