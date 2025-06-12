@@ -100,3 +100,41 @@ public:
     }
 };
 
+int main(){
+
+    Queues q;
+    char ch;
+
+    while(true){
+        try{
+            cout << "\nmenu\n";
+            cout << "1. implement insert operation\n";
+            cout << "2. implement remove operation\n";
+            cout << "3. display value\n";
+            cout << "4. exit\n";
+            cout << "Enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
+
+            switch(ch){
+                case '1':
+                    q.insert();
+                    break;
+                case '2':
+                    q.remove();
+                    break;
+                case '3':
+                    q.display();
+                    break;
+                case '4':
+                    cout << "Exiting the program.\n";
+                    return 0;
+                default:
+                    cout << "Invalid choice. Please try again.\n";
+            }
+        }
+        catch (exception &e){
+            cout << "Check for the values entered.\n";
+        }
+    }
+}
