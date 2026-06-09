@@ -1,4 +1,4 @@
-/***
+/**
  * @mainpage Documentation Circular Queue
  * 
  * @section Introduction
@@ -12,20 +12,20 @@
  * 3. display
  * 
  * @section Cara Penggunaan
- * 1.  en queue
- * 2.  de queue
+ * 1. en queue
+ * 2. de queue
  * 3. display 
  * 
  * @author profil
  * -nama: Raja Zhafar Akbar Rangkuty
  * -nim: 20240140123
- * - kelas: C
+ * -kelas: B
  * 
  * @brief
  * @version 1.0
- * @date 2025-06-24
+ * @date 2026-06-09
  * 
- * @copyright {raja.zhafar.ft24@mail.umy.ac.id} (c) 2025
+ * @copyright {raja.zhafar.ft24@mail.umy.ac.id} (c) 2026
  */
 #include <iostream>
 using namespace std;
